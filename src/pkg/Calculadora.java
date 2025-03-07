@@ -26,8 +26,7 @@ public class Calculadora {
                 System.out.println("Resultado: " + resultado);
                 break;
             case '-':
-                resultado = num1 - num2;
-                System.out.println("Resultado: " + resultado);
+            	resta(num1, num2);
                 break;
             case '*':
                 resultado = num1 * num2;
@@ -44,7 +43,13 @@ public class Calculadora {
             default:
                 System.out.println("Operador no válido.");
         }
-
+        
         scanner.close();
     }
+
+	private static void resta(double num1, double num2) {
+		double resultado;
+		resultado = num1 - num2;
+		System.out.println("Resultado: " + resultado);
+	}
 }
