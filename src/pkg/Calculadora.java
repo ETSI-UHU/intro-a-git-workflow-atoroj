@@ -34,17 +34,22 @@ public class Calculadora {
                 System.out.println("Resultado: " + resultado);
                 break;
             case '/':
-                if (num2 != 0) {
-                    resultado = num1 / num2;
-                    System.out.println("Resultado: " + resultado);
-                } else {
-                    System.out.println("Error: División por cero no permitida.");
-                }
+                division(num1, num2);
                 break;
             default:
                 System.out.println("Operador no válido.");
         }
 
         scanner.close();
+    }
+    
+    public static void division(double n1, double n2) {
+    	double resultado;
+    	if (n2 != 0) {
+            resultado = n1 / n2;
+            System.out.println("Resultado: " + resultado);
+        } else {
+            System.out.println("Error: División por cero no permitida.");
+        }
     }
 }
