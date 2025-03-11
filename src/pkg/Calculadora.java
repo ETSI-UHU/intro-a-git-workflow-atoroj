@@ -22,8 +22,7 @@ public class Calculadora {
 
         switch (operador) {
             case '+':
-                resultado = num1 + num2;
-                System.out.println("Resultado: " + resultado);
+            	suma(num1, num2);
                 break;
             case '-':
                 resultado = num1 - num2;
@@ -47,4 +46,10 @@ public class Calculadora {
 
         scanner.close();
     }
+
+	private static void suma(double num1, double num2) {
+		double resultado;
+		resultado = num1 + num2;
+		System.out.println("Resultado: " + resultado);
+	}
 }
