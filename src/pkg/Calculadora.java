@@ -25,8 +25,7 @@ public class Calculadora {
             	suma(num1, num2);
                 break;
             case '-':
-                resultado = num1 - num2;
-                System.out.println("Resultado: " + resultado);
+            	resta(num1, num2);
                 break;
             case '*':
                 resultado = num1 * num2;
@@ -43,13 +42,19 @@ public class Calculadora {
             default:
                 System.out.println("Operador no válido.");
         }
-
+        
         scanner.close();
     }
 
-	private static void suma(double num1, double num2) {
+mejora/1-refactorizar-la-operacion-resta-del-switch
+	private static void resta(double num1, double num2) {
+		double resultado;
+		resultado = num1 - num2;
+
+   private static void suma(double num1, double num2) {
 		double resultado;
 		resultado = num1 + num2;
+ master
 		System.out.println("Resultado: " + resultado);
 	}
 }
