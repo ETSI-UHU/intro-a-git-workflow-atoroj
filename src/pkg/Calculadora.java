@@ -22,8 +22,7 @@ public class Calculadora {
 
         switch (operador) {
             case '+':
-                resultado = num1 + num2;
-                System.out.println("Resultado: " + resultado);
+            	suma(num1, num2);
                 break;
             case '-':
             	resta(num1, num2);
@@ -47,9 +46,15 @@ public class Calculadora {
         scanner.close();
     }
 
+mejora/1-refactorizar-la-operacion-resta-del-switch
 	private static void resta(double num1, double num2) {
 		double resultado;
 		resultado = num1 - num2;
+
+   private static void suma(double num1, double num2) {
+		double resultado;
+		resultado = num1 + num2;
+ master
 		System.out.println("Resultado: " + resultado);
 	}
 }
