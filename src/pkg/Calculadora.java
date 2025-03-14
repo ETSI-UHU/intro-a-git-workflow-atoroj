@@ -22,16 +22,13 @@ public class Calculadora {
 
         switch (operador) {
             case '+':
-                resultado = num1 + num2;
-                System.out.println("Resultado: " + resultado);
+            	suma(num1, num2);
                 break;
             case '-':
-                resultado = num1 - num2;
-                System.out.println("Resultado: " + resultado);
+            	resta(num1, num2);
                 break;
             case '*':
-                resultado = num1 * num2;
-                System.out.println("Resultado: " + resultado);
+            	multiplicacion(num1, num2);
                 break;
             case '/':
                 division(num1, num2);
@@ -39,11 +36,11 @@ public class Calculadora {
             default:
                 System.out.println("Operador no válido.");
         }
-
+        
         scanner.close();
     }
     
-    public static void division(double n1, double n2) {
+  public static void division(double n1, double n2) {
     	double resultado;
     	if (n2 != 0) {
             resultado = n1 / n2;
@@ -52,4 +49,22 @@ public class Calculadora {
             System.out.println("Error: División por cero no permitida.");
         }
     }
+  
+	private static void multiplicacion(double num1, double num2) {
+		double resultado;
+		resultado = num1 * num2;
+		System.out.println("Resultado: " + resultado);
+	}
+
+	private static void resta(double num1, double num2) {
+		double resultado;
+		resultado = num1 - num2;
+
+   private static void suma(double num1, double num2) {
+		double resultado;
+		resultado = num1 + num2;
+
+		System.out.println("Resultado: " + resultado);
+	}
+
 }
