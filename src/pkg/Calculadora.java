@@ -28,8 +28,7 @@ public class Calculadora {
             	resta(num1, num2);
                 break;
             case '*':
-                resultado = num1 * num2;
-                System.out.println("Resultado: " + resultado);
+            	multiplicacion(num1, num2);
                 break;
             case '/':
                 if (num2 != 0) {
@@ -45,8 +44,13 @@ public class Calculadora {
         
         scanner.close();
     }
+  
+	private static void multiplicacion(double num1, double num2) {
+		double resultado;
+		resultado = num1 * num2;
+		System.out.println("Resultado: " + resultado);
+	}
 
-mejora/1-refactorizar-la-operacion-resta-del-switch
 	private static void resta(double num1, double num2) {
 		double resultado;
 		resultado = num1 - num2;
@@ -54,7 +58,8 @@ mejora/1-refactorizar-la-operacion-resta-del-switch
    private static void suma(double num1, double num2) {
 		double resultado;
 		resultado = num1 + num2;
- master
+
 		System.out.println("Resultado: " + resultado);
 	}
+
 }
